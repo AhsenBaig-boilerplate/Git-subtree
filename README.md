@@ -14,8 +14,13 @@ git read-tree --prefix=spoon-knife/ -u spoon-knife/main
 ```
 
 ```
-git commit -m "Subtree merged in spoon-knife"
+git pull -s subtree REMOTE-NAME BRANCH-NAME
 ```
+
+>Example
+>```
+>git commit -m "Subtree merged in spoon-knife"
+>```
 
 ### Synchronizing with updates and changes
 When a subproject is added, it is not automatically kept in sync with the upstream changes. You will need to update the subproject with the following command:
